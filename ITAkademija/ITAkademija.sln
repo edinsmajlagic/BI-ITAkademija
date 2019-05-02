@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "ITAkademija-ETL", "ITAkademija-ETL\ITAkademija-ETL.dtproj", "{574C6955-1CBE-4C65-AC09-6B674E73CF66}"
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "ITAkademija_CUBE", "ITAkademija_CUBE\ITAkademija_CUBE.dwproj", "{849CEDBC-2911-417B-82B8-E689F82B722D}"
+EndProject
+Project("{6870E480-7721-4708-BFB8-9AE898AA21B3}") = "ITAkademija_Tabular", "ITAkademija_Tabular\ITAkademija_Tabular.smproj", "{8CE414BB-95B2-4C99-9E03-51BA72086E22}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "ITAkademija_Reports", "ITAkademija_Reports\ITAkademija_Reports.rptproj", "{4E6FB99D-0523-44D0-88FE-7D7C6785E3FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		DebugLocal|x86 = DebugLocal|x86
+		Development|x86 = Development|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{574C6955-1CBE-4C65-AC09-6B674E73CF66}.Debug|x86.ActiveCfg = Development
+		{574C6955-1CBE-4C65-AC09-6B674E73CF66}.Debug|x86.Build.0 = Development
+		{574C6955-1CBE-4C65-AC09-6B674E73CF66}.DebugLocal|x86.ActiveCfg = Development
+		{574C6955-1CBE-4C65-AC09-6B674E73CF66}.DebugLocal|x86.Build.0 = Development
+		{574C6955-1CBE-4C65-AC09-6B674E73CF66}.Development|x86.ActiveCfg = Development
+		{574C6955-1CBE-4C65-AC09-6B674E73CF66}.Development|x86.Build.0 = Development
+		{574C6955-1CBE-4C65-AC09-6B674E73CF66}.Release|x86.ActiveCfg = Development
+		{574C6955-1CBE-4C65-AC09-6B674E73CF66}.Release|x86.Build.0 = Development
+		{849CEDBC-2911-417B-82B8-E689F82B722D}.Debug|x86.ActiveCfg = Development
+		{849CEDBC-2911-417B-82B8-E689F82B722D}.Debug|x86.Build.0 = Development
+		{849CEDBC-2911-417B-82B8-E689F82B722D}.Debug|x86.Deploy.0 = Development
+		{849CEDBC-2911-417B-82B8-E689F82B722D}.DebugLocal|x86.ActiveCfg = Development
+		{849CEDBC-2911-417B-82B8-E689F82B722D}.DebugLocal|x86.Build.0 = Development
+		{849CEDBC-2911-417B-82B8-E689F82B722D}.DebugLocal|x86.Deploy.0 = Development
+		{849CEDBC-2911-417B-82B8-E689F82B722D}.Development|x86.ActiveCfg = Development
+		{849CEDBC-2911-417B-82B8-E689F82B722D}.Development|x86.Build.0 = Development
+		{849CEDBC-2911-417B-82B8-E689F82B722D}.Development|x86.Deploy.0 = Development
+		{849CEDBC-2911-417B-82B8-E689F82B722D}.Release|x86.ActiveCfg = Development
+		{849CEDBC-2911-417B-82B8-E689F82B722D}.Release|x86.Build.0 = Development
+		{849CEDBC-2911-417B-82B8-E689F82B722D}.Release|x86.Deploy.0 = Development
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Debug|x86.Deploy.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.DebugLocal|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.DebugLocal|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.DebugLocal|x86.Deploy.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Development|x86.Deploy.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|x86.ActiveCfg = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|x86.Build.0 = Development|x86
+		{8CE414BB-95B2-4C99-9E03-51BA72086E22}.Release|x86.Deploy.0 = Development|x86
+		{4E6FB99D-0523-44D0-88FE-7D7C6785E3FE}.Debug|x86.ActiveCfg = Debug
+		{4E6FB99D-0523-44D0-88FE-7D7C6785E3FE}.Debug|x86.Build.0 = Debug
+		{4E6FB99D-0523-44D0-88FE-7D7C6785E3FE}.Debug|x86.Deploy.0 = Debug
+		{4E6FB99D-0523-44D0-88FE-7D7C6785E3FE}.DebugLocal|x86.ActiveCfg = DebugLocal
+		{4E6FB99D-0523-44D0-88FE-7D7C6785E3FE}.DebugLocal|x86.Build.0 = DebugLocal
+		{4E6FB99D-0523-44D0-88FE-7D7C6785E3FE}.Development|x86.ActiveCfg = DebugLocal
+		{4E6FB99D-0523-44D0-88FE-7D7C6785E3FE}.Development|x86.Build.0 = DebugLocal
+		{4E6FB99D-0523-44D0-88FE-7D7C6785E3FE}.Release|x86.ActiveCfg = Release
+		{4E6FB99D-0523-44D0-88FE-7D7C6785E3FE}.Release|x86.Build.0 = Release
+		{4E6FB99D-0523-44D0-88FE-7D7C6785E3FE}.Release|x86.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A77E6CBE-1CB2-4245-BEB3-5E5EFDAAEF81}
+	EndGlobalSection
+EndGlobal

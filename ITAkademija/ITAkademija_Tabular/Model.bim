@@ -1,0 +1,623 @@
+{
+  "name": "SemanticModel",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "bs-Latn-BA",
+    "dataSources": [
+      {
+        "name": "SqlServer localhost ITAKADEMIJA",
+        "connectionString": "Provider=SQLNCLI11;Data Source=.;Initial Catalog=ITAKADEMIJA;Integrated Security=SSPI;Persist Security Info=false",
+        "impersonationMode": "impersonateAccount",
+        "account": "Win\\Meldin Nuhic",
+        "annotations": [
+          {
+            "name": "ConnectionEditUISource",
+            "value": "SqlServer"
+          }
+        ]
+      }
+    ],
+    "tables": [
+      {
+        "name": "AkademskeGodine",
+        "columns": [
+          {
+            "name": "AkademskaID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "AkademskaID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "AkademskaGodina",
+            "dataType": "string",
+            "sourceColumn": "AkademskaGodina",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "AkademskeGodine",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[AkademskeGodine].* FROM [dbo].[AkademskeGodine] ",
+              "dataSource": "SqlServer localhost ITAKADEMIJA"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[AkademskeGodine].* FROM [dbo].[AkademskeGodine] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "AkademskeGodine"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Drzave",
+        "columns": [
+          {
+            "name": "DrzavaID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "DrzavaID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Naziv",
+            "dataType": "string",
+            "sourceColumn": "Naziv",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Drzave",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[Drzave].* FROM [dbo].[Drzave] ",
+              "dataSource": "SqlServer localhost ITAKADEMIJA"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[Drzave].* FROM [dbo].[Drzave] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Drzave"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Gradovi",
+        "columns": [
+          {
+            "name": "GradID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "GradID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Naziv",
+            "dataType": "string",
+            "sourceColumn": "Naziv",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "RegijaID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "RegijaID",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Gradovi",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[Gradovi].* FROM [dbo].[Gradovi] ",
+              "dataSource": "SqlServer localhost ITAKADEMIJA"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[Gradovi].* FROM [dbo].[Gradovi] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Gradovi"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Kursevi",
+        "columns": [
+          {
+            "name": "KursID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "KursID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Naziv",
+            "dataType": "string",
+            "sourceColumn": "Naziv",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "BrojPolaznika",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "BrojPolaznika",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "MaksimalanBrojPolaznika",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "MaksimalanBrojPolaznika",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "UposlenikID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "UposlenikID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "OblastID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "OblastID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "AkademskaGodinaID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "AkademskaGodinaID",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Kursevi",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[Kursevi].* FROM [dbo].[Kursevi] ",
+              "dataSource": "SqlServer localhost ITAKADEMIJA"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[Kursevi].* FROM [dbo].[Kursevi] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Kursevi"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Oblast",
+        "columns": [
+          {
+            "name": "OblastID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "OblastID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Naziv",
+            "dataType": "string",
+            "sourceColumn": "Naziv",
+            "sourceProviderType": "WChar"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Oblast",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[Oblast].* FROM [dbo].[Oblast] ",
+              "dataSource": "SqlServer localhost ITAKADEMIJA"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[Oblast].* FROM [dbo].[Oblast] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Oblast"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Polaznici",
+        "columns": [
+          {
+            "name": "PolaznikID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "PolaznikID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Ime",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Ime",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Prezime",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Prezime",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "JMBG",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "JMBG",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "DatumRodjenja",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "sourceColumn": "DatumRodjenja",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "Spol",
+            "dataType": "string",
+            "sourceColumn": "Spol",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "TrenutnoObrazovanje",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "TrenutnoObrazovanje",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "PrethodnoObrazovanje",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "PrethodnoObrazovanje",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Email",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Email",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "Telefon",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Telefon",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "GradID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "GradID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "type": "calculated",
+            "name": "Ime Prezime",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "expression": "Polaznici[Ime]& \" \" & Polaznici[Prezime]"
+          },
+          {
+            "type": "calculated",
+            "name": "Starost",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": "DATEDIFF(Polaznici[DatumRodjenja],NOW(),YEAR)"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Polaznici",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[Polaznici].* FROM [dbo].[Polaznici] ",
+              "dataSource": "SqlServer localhost ITAKADEMIJA"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[Polaznici].* FROM [dbo].[Polaznici] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Polaznici"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Regija",
+        "columns": [
+          {
+            "name": "RegijaID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "RegijaID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Naziv",
+            "dataType": "string",
+            "sourceColumn": "Naziv",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "name": "DrzavaID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "DrzavaID",
+            "sourceProviderType": "Integer"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Regija",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[Regija].* FROM [dbo].[Regija] ",
+              "dataSource": "SqlServer localhost ITAKADEMIJA"
+            }
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[Regija].* FROM [dbo].[Regija] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Regija"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      },
+      {
+        "name": "Uplate",
+        "columns": [
+          {
+            "name": "UplateID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "UplateID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "PolaznikID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "PolaznikID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "DatumUplate",
+            "dataType": "dateTime",
+            "sourceColumn": "DatumUplate",
+            "formatString": "General Date",
+            "sourceProviderType": "DBTimeStamp"
+          },
+          {
+            "name": "Iznos",
+            "dataType": "double",
+            "sourceColumn": "Iznos",
+            "sourceProviderType": "Numeric"
+          },
+          {
+            "name": "UposlenikID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "UposlenikID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "KursID",
+            "dataType": "int64",
+            "isHidden": true,
+            "sourceColumn": "KursID",
+            "sourceProviderType": "Integer"
+          },
+          {
+            "name": "Opis",
+            "dataType": "string",
+            "isHidden": true,
+            "sourceColumn": "Opis",
+            "sourceProviderType": "WChar"
+          },
+          {
+            "type": "calculated",
+            "name": "Godina",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": "YEAR(Uplate[DatumUplate])"
+          },
+          {
+            "type": "calculated",
+            "name": "Mjesec",
+            "dataType": "int64",
+            "isDataTypeInferred": true,
+            "expression": "MONTH(Uplate[DatumUplate])"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Uplate",
+            "dataView": "full",
+            "source": {
+              "type": "query",
+              "query": " SELECT [dbo].[Uplate].* FROM [dbo].[Uplate] ",
+              "dataSource": "SqlServer localhost ITAKADEMIJA"
+            }
+          }
+        ],
+        "measures": [
+          {
+            "name": "Broj Uplata",
+            "expression": "COUNTA([UplateID])"
+          },
+          {
+            "name": "Ukupan iznos uplata",
+            "expression": "SUM([Iznos])"
+          },
+          {
+            "name": "Prosječna uplata",
+            "expression": "AVERAGE([Iznos])"
+          },
+          {
+            "name": "Minimalna uplata",
+            "expression": "MIN([Iznos])"
+          },
+          {
+            "name": "Maksimalna uplata",
+            "expression": "MAX([Iznos])"
+          }
+        ],
+        "annotations": [
+          {
+            "name": "_TM_ExtProp_QueryDefinition",
+            "value": " SELECT [dbo].[Uplate].* FROM [dbo].[Uplate] "
+          },
+          {
+            "name": "_TM_ExtProp_DbTableName",
+            "value": "Uplate"
+          },
+          {
+            "name": "_TM_ExtProp_DbSchemaName",
+            "value": "dbo"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "name": "a7ceb195-d37d-43e5-9572-27fe312b619f",
+        "fromTable": "Gradovi",
+        "fromColumn": "RegijaID",
+        "toTable": "Regija",
+        "toColumn": "RegijaID"
+      },
+      {
+        "name": "1dcbf2f2-0a20-462c-9c88-40a38d386ee0",
+        "fromTable": "Kursevi",
+        "fromColumn": "AkademskaGodinaID",
+        "toTable": "AkademskeGodine",
+        "toColumn": "AkademskaID"
+      },
+      {
+        "name": "99ff6610-c2c8-4f66-a724-49645af23a95",
+        "fromTable": "Kursevi",
+        "fromColumn": "OblastID",
+        "toTable": "Oblast",
+        "toColumn": "OblastID"
+      },
+      {
+        "name": "d6583912-39c9-4ed0-9b54-8d206de7dd8e",
+        "fromTable": "Polaznici",
+        "fromColumn": "GradID",
+        "toTable": "Gradovi",
+        "toColumn": "GradID"
+      },
+      {
+        "name": "666f58b1-215c-47e9-84de-8e4d2f93409a",
+        "fromTable": "Regija",
+        "fromColumn": "DrzavaID",
+        "toTable": "Drzave",
+        "toColumn": "DrzavaID"
+      },
+      {
+        "name": "0bd522b4-be68-4e8a-a2fc-991244217ef7",
+        "fromTable": "Uplate",
+        "fromColumn": "KursID",
+        "toTable": "Kursevi",
+        "toColumn": "KursID"
+      },
+      {
+        "name": "3bc0ca11-01bc-45e2-8d5f-9f889f525225",
+        "fromTable": "Uplate",
+        "fromColumn": "PolaznikID",
+        "toTable": "Polaznici",
+        "toColumn": "PolaznikID"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "ClientCompatibilityLevel",
+        "value": "400"
+      }
+    ]
+  },
+  "id": "SemanticModel"
+}

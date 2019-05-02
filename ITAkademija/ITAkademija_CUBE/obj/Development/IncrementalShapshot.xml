@@ -1,0 +1,96 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>ITAkademija_CUBE</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>6C9l+nbeWNrRzajhA0/v3QpxJPI=29.04.2019. 15:20:2229.04.2019. 15:02:25</TimeStamp>
+        <ID>
+          <String>ITAKADEMIJA DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>HkZQ9oM9XfkDvRH+Fvw1EUgLNTA=29.04.2019. 15:02:5729.04.2019. 15:02:56</TimeStamp>
+        <ID>
+          <String>ITAKADEMIJA DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>DhN61lhTpG+tvoAvwB6Nu4rzYYE=29.04.2019. 15:04:1429.04.2019. 15:04:13</TimeStamp>
+        <ID>
+          <String>Dim Akademska Godina</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>8AXW5oE3MjGlvk932rFXaEWuHH4=29.04.2019. 15:21:5429.04.2019. 15:04:14</TimeStamp>
+        <ID>
+          <String>Dim Datum</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GT7kjtpqrHQqq1c+cRuMcaQ5a+g=29.04.2019. 15:04:1429.04.2019. 15:04:14</TimeStamp>
+        <ID>
+          <String>Dim Spol</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>rIAip0cska/ng4sK/UWJMt9Pah0=29.04.2019. 15:10:5629.04.2019. 15:04:14</TimeStamp>
+        <ID>
+          <String>Dim Lokacija</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>O+GdMmCbDtBdrJvbafnjJokmpMc=29.04.2019. 15:08:0629.04.2019. 15:04:14</TimeStamp>
+        <ID>
+          <String>Dim Polaznik</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>9V7o3o5al7fX9C0+MWeKz18GvUc=29.04.2019. 15:08:2229.04.2019. 15:04:14</TimeStamp>
+        <ID>
+          <String>Dim Kategorija Kursa</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>YexdTg7fSrHjYumFRYr5Xx4CrF8=29.04.2019. 15:08:2229.04.2019. 15:04:13A22Xx95RDzwLTIDTWyVtWZuh4Z0=29.04.2019. 15:04:1429.04.2019. 15:04:13</TimeStamp>
+        <ID>
+          <String>ITAKADEMIJACUBE</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>ctiW1+dcGlHhWI+x6rkx0kjA6Jo=29.04.2019. 15:00:1729.04.2019. 15:00:16</TimeStamp>
+      <ID>
+        <String>ITAkademija_CUBE</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2019-04-29T13:22:06.856667Z</LastDeployed>
+</DeploymentSnapshot>

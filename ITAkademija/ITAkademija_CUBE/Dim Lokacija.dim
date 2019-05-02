@@ -1,0 +1,256 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="5283b16d-ec0f-46fa-a4bd-6be1d305675a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Lokacija</ID>
+  <Name>Dim Lokacija</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2785" scrolltop="-3969" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8678" y="11086" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="DimLokacija" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3069" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000fd0b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_DimLokacija" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2785</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-3969</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="102">
+            <Shape Id="Lokacija Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Lokacija Key" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Grad" Expanded="false">
+              <Attributes>
+                <Attribute Id="Grad" />
+              </Attributes>
+              <Position x="152" y="20" />
+            </Shape>
+            <Shape Id="Regija" Expanded="false">
+              <Attributes>
+                <Attribute Id="Regija" />
+              </Attributes>
+              <Position x="285" y="20" />
+            </Shape>
+            <Shape Id="Drzava" Expanded="false">
+              <Attributes>
+                <Attribute Id="Drzava" />
+              </Attributes>
+              <Position x="417" y="20" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d8a82cbd-cdc4-4145-8681-eb55c3956612">
+    <DataSourceViewID>ITAKADEMIJA DW</DataSourceViewID>
+  </Source>
+  <UnknownMember>Visible</UnknownMember>
+  <ErrorConfiguration dwd:design-time-name="4ed925b4-b6d6-47b1-a370-87cc0d24e379">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="15bc3753-9055-43be-8345-5ec85e8e88c5">
+      <ID>Lokacija Key</ID>
+      <Name>Lokacija Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1e7731da-a783-4186-9432-700227e2bdae">
+          <DataType>Integer</DataType>
+          <NullProcessing>UnknownMember</NullProcessing>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f20013ed-f66d-4c82-945a-8a0afb9f59b0">
+            <TableID>dbo_DimLokacija</TableID>
+            <ColumnID>LokacijaKey</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5981b099-33d7-4a4b-b173-ee57ef45aa57">
+          <AttributeID>Grad</AttributeID>
+          <Name>Grad</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="abcd0769-4204-422b-988e-c712cee57e42">
+      <ID>Grad</ID>
+      <Name>Grad</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b8a27536-d1c4-47d4-8047-30c23edaedf6">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="965970da-2634-4fef-b957-8976865400c3">
+            <TableID>dbo_DimLokacija</TableID>
+            <ColumnID>Grad</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="4de87c7d-9ba2-4d20-ba5e-2b1a02e1a549">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c56d9b8f-d83e-4d89-ae83-6c97e120fcaa">
+            <TableID>dbo_DimLokacija</TableID>
+            <ColumnID>Regija</ColumnID>
+          </Source>
+        </KeyColumn>
+        <KeyColumn dwd:design-time-name="f46cf4b5-0168-4a14-b598-7c2e445b414e">
+          <DataType>WChar</DataType>
+          <DataSize>40</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="94d39e71-bf79-4a36-a22e-0760811f7912">
+            <TableID>dbo_DimLokacija</TableID>
+            <ColumnID>Drzava</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <NameColumn dwd:design-time-name="7dc3fade-a00a-4ce1-9c4c-40187732fd88">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="895c6023-5400-476d-86ee-0356c1477a34">
+          <TableID>dbo_DimLokacija</TableID>
+          <ColumnID>Grad</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="7a69b248-c22d-4ab9-928b-877899021473">
+          <AttributeID>Regija</AttributeID>
+          <Name>Regija</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ValueColumn dwd:design-time-name="2d64ac6b-2613-4ab1-821d-1bcb1069311f">
+        <DataType>WChar</DataType>
+        <DataSize>50</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="1066f255-539f-4e42-9200-53e1c19c39b7">
+          <TableID>dbo_DimLokacija</TableID>
+          <ColumnID>Grad</ColumnID>
+        </Source>
+      </ValueColumn>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="59e7c65d-f29f-4ce4-9407-a94c550b8f80">
+      <ID>Regija</ID>
+      <Name>Regija</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="069f00b4-716f-4745-aa5f-5669e873fc7a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="dc048aab-20c6-460e-81ef-091e941931ae">
+            <TableID>dbo_DimLokacija</TableID>
+            <ColumnID>Regija</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="bf13d99a-62cb-4457-8709-06c7125d7ac5">
+          <AttributeID>Drzava</AttributeID>
+          <Name>Drzava</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="8b1259c4-853b-4ffa-9e08-3e5b4c6063df">
+      <ID>Drzava</ID>
+      <Name>Drzava</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="71b01326-ca69-4c07-b742-84999a2286fe">
+          <DataType>WChar</DataType>
+          <DataSize>40</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f46a3bc2-1508-4953-b5a7-eb536bbc4217">
+            <TableID>dbo_DimLokacija</TableID>
+            <ColumnID>Drzava</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="c2fbda51-0c99-4f7e-9fc3-e2982ba8c171">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="f387a35d-5eee-4cd7-a61a-377f8346414e">
+          <ID>Drzava</ID>
+          <Name>Drzava</Name>
+          <SourceAttributeID>Drzava</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c3959b81-f87d-41ff-a497-24adbfa3d59d">
+          <ID>Regija</ID>
+          <Name>Regija</Name>
+          <SourceAttributeID>Regija</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b743e618-99be-4a5d-a798-8e4bace2f9c1">
+          <ID>Grad</ID>
+          <Name>Grad</Name>
+          <SourceAttributeID>Grad</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
